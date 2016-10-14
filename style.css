@@ -1,13 +1,32 @@
+/* --- MAIN BODY WRAPPER --- */
 .wrapper{
   width: 980px;
   border: 4px black solid;
   border-radius: 4px;
-  min-height: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-bottom: 25px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+/*--- THE GRID ---*/
+#grid {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*--- ROW FORMATING --- */
+section {
+  display: flex;
+  justify-content: center;
+}
+
+ /*--- STYLE FOR ONE PIXEL --- */
 .pixelStyle{
   border: 1px black solid;
   height: 10px;
@@ -17,18 +36,20 @@
   margin-top: 1px;
 }
 
-.row {
-  margin: 0;
-  padding: 0;
+/*--- COLORS --- */
+.color {
+border: 1px black solid;
+height: 30px;
+width: 30px;
+border-radius: 15px;
+float: left;
+margin-left: 5px;
+margin-bottom: 5px;
 }
 
-#grid {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#blue{
+  background-color: blue;
 }
-
-section {
-  display: flex;
-  justify-content: center;
+#red {
+  background-color: red;
 }
