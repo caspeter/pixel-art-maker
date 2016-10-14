@@ -1,0 +1,28 @@
+.wrapper{
+  width: 980px;
+  border: 4px black solid;
+  border-radius: 4px;
+  min-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.pixel {
+  margin: 0;
+  padding: 0;
+  border: 1px black solid;
+  height: 5px;
+  width: 5px;
+}
+
+#grid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
