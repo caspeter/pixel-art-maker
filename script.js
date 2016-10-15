@@ -30,11 +30,7 @@ createRow(25, 70);
  // --- COLOR PICKER
 var idColor = 'black'
 
-  var brushColor = function (event) {
-    idColor = '#' + event.target.id;
-    console.log(idColor);
-    return idColor;
-};
+
 
 
 // get into the div color
@@ -43,7 +39,11 @@ var colors = document.querySelector('.color')
 // ------
 
 // when a color is mousedown on, grab that color using brushColor
-colors.addEventListener('mousedown', brushColor(event))
+colors.addEventListener('mousedown', function (event) {
+  idColor = '#' + event.target.id;
+  console.log(idColor);
+  return idColor;
+});
 // ------
 
 // to fill a pixel with a color
