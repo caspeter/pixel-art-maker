@@ -56,11 +56,40 @@ margin-bottom: 5px;*/
   margin-left: 5px;
   margin-bottom: 5px;
 }
-/* sizziling red*/
-#FF3855{
-  background-color: #FF3855;
+
+/* red*/
+#FF0000{
+  background-color: #FF0000;
 }
-/*orange soda*/
-#FA5B3D {
-  background-color: #FA5B3D;
+/*orange*/
+#FF7F00 {
+  background-color: #FF7F00;
+}
+/*yellow*/
+#FFFF00{
+    background-color: 	#FFFF00;
+  }
+/*green*/
+#z00FF00 {
+  background-color: #00FF00;
+}
+/*blue*/
+#z0000FF {
+  background-color: #0000FF;
+}
+/*indigo*/
+#z9400D3 {
+  background-color: #9400D3;
+}
+/*silver*/
+#C9C0BB {
+  background-color: #C9C0BB;
+}
+/*white*/
+#FFFFFF{
+  background-color: #FFFFFF;
+}
+/*black*/
+#z000000{
+  background-color: #000000;
 }

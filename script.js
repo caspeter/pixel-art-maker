@@ -30,9 +30,6 @@ createRow(25, 70);
  // --- COLOR PICKER
 var idColor = 'black'
 
-
-
-
 // get into the div color
 var colors = document.querySelector('.color')
 // console.log(colors);
@@ -40,10 +37,28 @@ var colors = document.querySelector('.color')
 
 // when a color is mousedown on, grab that color using brushColor
 colors.addEventListener('mousedown', function (event) {
-  idColor = '#' + event.target.id;
-  console.log(idColor);
-  return idColor;
+  if(event.target.id.startsWith('z')){
+    var something = event.target.id;
+    var somethingB = something.toString();
+    // console.log(theID);
+    var removeColor = somethingB.slice(1,7);
+    idColor = '#' + removeColor
+  }
+  else {
+    idColor = '#' + event.target.id;
+    console.log(idColor);
+    return idColor;
+  }
+  // idColor = '#' + event.target.id;
+  // console.log(idColor);
+  // return idColor;
 });
+
+// colors.addEventListener('mousedown', function (event) {
+//   idColor = '#' + event.target.id;
+//   console.log(idColor);
+//   return idColor;
+// });
 // ------
 
 // to fill a pixel with a color
