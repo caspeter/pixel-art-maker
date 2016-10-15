@@ -38,18 +38,29 @@ section {
 
 /*--- COLORS --- */
 .color {
-border: 1px black solid;
+/*border: 1px black solid;
 height: 30px;
 width: 30px;
 border-radius: 15px;
 float: left;
 margin-left: 5px;
-margin-bottom: 5px;
+margin-bottom: 5px;*/
 }
 
-#blue{
-  background-color: blue;
+.colorContainer {
+  border: 1px black solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
-#red {
-  background-color: red;
+/* sizziling red*/
+#FF3855{
+  background-color: #FF3855;
+}
+/*orange soda*/
+#FA5B3D {
+  background-color: #FA5B3D;
 }
