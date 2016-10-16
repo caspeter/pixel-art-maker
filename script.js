@@ -1,8 +1,8 @@
 'use strict';
 
+// --- THE GRID ---
 var grid = document.querySelector('#grid');
-
- // --- THE GRID ---
+var painting = false;
 
 var createRow = function(numberOfRows, numbOfPixels) {
     for (var i = 0; i < numberOfRows; i++) {
@@ -12,8 +12,18 @@ var createRow = function(numberOfRows, numbOfPixels) {
             var pixel = document.createElement('article');
             pixel.classList.add('pixelStyle');
             row.appendChild(pixel);
-            pixel.addEventListener('click', fillPixel)
-        }
+            // pixel.addEventListener('click', fillPixel);
+            // testing mousedown and mouseover
+            pixel.addEventListener('mousedown', function(event) {
+              event.target.style.backgroundColor = idColor;
+              event.target.style.borderColor = idColor;
+              painting = true;
+            });
+            pixel.addEventListener('mouseover', fillPixel);
+            pixel.addEventListener('mouseup', function(event){
+              painting = false;
+            });
+          }
         grid.appendChild(row);
     }
     // console.log(row);
@@ -62,7 +72,9 @@ colors.addEventListener('mousedown', function (event) {
 
 // to fill a pixel with a color
 function fillPixel (event) {
+  if (painting === true) {
     event.target.style.backgroundColor = idColor;
     //makes the border of the pixel the same color as the pixel, so the image can be flush
     event.target.style.borderColor = idColor;
+  }
 };

@@ -1,3 +1,7 @@
+body {
+  background-color: #F9F9F9;
+}
+
 /* --- MAIN BODY WRAPPER --- */
 .wrapper{
   width: 980px;
@@ -12,6 +16,7 @@
   padding-right: 10px;
   overflow: hidden;
   font-family: sans-serif;
+  background-color: #F9F9F9;
 }
 
 /*--- TEXT ---*/
