@@ -19,7 +19,7 @@ var createRow = function(numberOfRows, numbOfPixels) {
     // console.log(row);
 }
 
-createRow(25, 70);
+createRow(25, 60);
 
  // --- CLICK TO CHANGE BLOCK TO BLACK
 
@@ -29,6 +29,8 @@ createRow(25, 70);
 
  // --- COLOR PICKER
 var idColor = 'black'
+var currentColor = document.querySelector('#currentColor');
+currentColor.style.backgroundColor = 'black';
 
 // get into the div color
 var colors = document.querySelector('.color')
@@ -42,12 +44,15 @@ colors.addEventListener('mousedown', function (event) {
     var somethingB = something.toString();
     // console.log(theID);
     var removeColor = somethingB.slice(1,7);
-    idColor = '#' + removeColor
+    idColor = '#' + removeColor;
+    currentColor.style.backgroundColor = '#' + removeColor;
   }
   else {
     idColor = '#' + event.target.id;
-    console.log(idColor);
+    currentColor.style.backgroundColor = '#' + event.target.id;
+    // console.log(idColor);
     return idColor;
+
   }
   // idColor = '#' + event.target.id;
   // console.log(idColor);
@@ -64,4 +69,6 @@ colors.addEventListener('mousedown', function (event) {
 // to fill a pixel with a color
 function fillPixel (event) {
     event.target.style.backgroundColor = idColor;
+    //makes the border of the pixel the same color as the pixel, so the image can be flush
+    event.target.style.borderColor = idColor;
 };

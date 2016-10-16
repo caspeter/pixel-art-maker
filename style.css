@@ -28,35 +28,46 @@ section {
 
  /*--- STYLE FOR ONE PIXEL --- */
 .pixelStyle{
-  border: 1px black solid;
-  height: 10px;
-  width: 10px;
+  border: 1px #D9D6CF solid;
+  height: 13px;
+  width: 13px;
   float: left;
-  margin-left: 1px;
-  margin-top: 1px;
+  /*display: inline-table;*/
+  /*border-collapse: collapse;*/
+  /*margin-left: 1px;
+  margin-top: 1px;*/
 }
 
 /*--- COLORS --- */
 .color {
-/*border: 1px black solid;
-height: 30px;
-width: 30px;
-border-radius: 15px;
-float: left;
-margin-left: 5px;
-margin-bottom: 5px;*/
+margin-right: auto;
+margin-left: auto;
+display: block;
 }
 
 .colorContainer {
   border: 1px black solid;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  /*float: left;*/
+  /*Used display instead of float left*/
+  display: inline-block;
   margin-left: 5px;
   margin-bottom: 5px;
 }
 
+#currentColor{
+  display: block;
+  height: 100px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #D9D6CF solid;
+  border-radius: 25px;
+}
+
+ /*COLORS*/
 /* red*/
 #FF0000{
   background-color: #FF0000;
