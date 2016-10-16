@@ -45,25 +45,19 @@ colors.addEventListener('mousedown', function (event) {
     // console.log(theID);
     var removeColor = somethingB.slice(1,7);
     idColor = '#' + removeColor;
+    //changes the current color container to be the color selected
     currentColor.style.backgroundColor = '#' + removeColor;
   }
   else {
     idColor = '#' + event.target.id;
+    //changes the current color container to be the color selected
     currentColor.style.backgroundColor = '#' + event.target.id;
     // console.log(idColor);
     return idColor;
 
   }
-  // idColor = '#' + event.target.id;
-  // console.log(idColor);
-  // return idColor;
 });
 
-// colors.addEventListener('mousedown', function (event) {
-//   idColor = '#' + event.target.id;
-//   console.log(idColor);
-//   return idColor;
-// });
 // ------
 
 // to fill a pixel with a color

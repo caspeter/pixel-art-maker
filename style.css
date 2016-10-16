@@ -11,6 +11,21 @@
   padding-left: 10px;
   padding-right: 10px;
   overflow: hidden;
+  font-family: sans-serif;
+}
+
+/*--- TEXT ---*/
+.ccFont {
+  text-align: center;
+  color: #D9D6CF;
+  font-weight: 200;
+  font-size: 30px
+}
+
+.colorFont {
+  color: #D9D6CF;
+  font-weight: 200;
+  font-size: 25px
 }
 
 /*--- THE GRID ---*/
@@ -38,15 +53,16 @@ section {
   margin-top: 1px;*/
 }
 
-/*--- COLORS --- */
+/*--- COLOR SETTINGS --- */
 .color {
 margin-right: auto;
 margin-left: auto;
 display: block;
+width: 90%;
 }
 
 .colorContainer {
-  border: 1px black solid;
+  border: 1px #D9D6CF solid;
   height: 50px;
   width: 50px;
   border-radius: 25px;
@@ -60,42 +76,75 @@ display: block;
 #currentColor{
   display: block;
   height: 100px;
-  width: 200px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   border: 1px #D9D6CF solid;
   border-radius: 25px;
+  margin-bottom: 25px;
 }
 
- /*COLORS*/
-/* red*/
-#FF0000{
-  background-color: #FF0000;
+ /* --- COLORS --- */
+/*pastel red*/
+#FF6961 {
+  background-color: #FF6961;
 }
-/*orange*/
-#FF7F00 {
-  background-color: #FF7F00;
+
+/*dark pastel red*/
+ #C23B22{
+   background-color: #C23B22;
+ }
+
+ /*pastel orange*/
+ #FFB347 {
+   background-color: #FFB347;
+ }
+
+/*pastel yellow*/
+#FDFD96 {
+  background-color: #FDFD96;
 }
-/*yellow*/
-#FFFF00{
-    background-color: 	#FFFF00;
-  }
-/*green*/
-#z00FF00 {
-  background-color: #00FF00;
+
+/*light pastel green*/
+#z77DD77 {
+  background-color: #77DD77;
 }
-/*blue*/
-#z0000FF {
-  background-color: #0000FF;
+
+/*dark pastel green*/
+#z03C03C {
+  background-color: #03C03C;
 }
-/*indigo*/
-#z9400D3 {
-  background-color: #9400D3;
+
+/*pastel blue*/
+#AEC6CF {
+  background-color: #AEC6CF;
 }
-/*silver*/
-#C9C0BB {
-  background-color: #C9C0BB;
+
+/*dark pastel blue*/
+#z779ECB {
+  background-color: #779ECB;
 }
+
+/*pastel purple*/
+#B19CD9 {
+  background-color: #B19CD9;
+}
+
+/*dark pastel purple*/
+#z966FD6 {
+  background-color: #966FD6;
+}
+
+/*pastel brown*/
+#z836953 {
+  background-color: #836953;
+}
+
+/*pastel grey*/
+#CFCFC4 {
+  background-color: #CFCFC4;
+}
+
 /*white*/
 #FFFFFF{
   background-color: #FFFFFF;
@@ -104,3 +153,36 @@ display: block;
 #z000000{
   background-color: #000000;
 }
+
+ /*--- NOT USED COLORS --- */
+
+
+
+/* red*/
+/*#FF0000{*/
+  /*background-color: #FF0000;*/
+/*}*/
+/*orange*/
+/*#FF7F00 {
+  background-color: #FF7F00;
+}*/
+/*yellow*/
+/*#FFFF00{
+  background-color: 	#FFFF00;
+}*/
+/*green*/
+/*#z00FF00 {
+  background-color: #00FF00;
+}*/
+/*blue*/
+/*#z0000FF {
+  background-color: #0000FF;
+}*/
+/*indigo*/
+/*#z9400D3 {
+  background-color: #9400D3;
+}*/
+/*silver*/
+/*#C9C0BB {
+  background-color: #C9C0BB;
+}*/
