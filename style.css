@@ -78,6 +78,13 @@ width: 95%;
   margin-bottom: 5px;
 }
 
+#ownColor{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;;
+}
+
 #currentColor{
   display: block;
   height: 100px;
@@ -87,6 +94,7 @@ width: 95%;
   border: 1px #D9D6CF solid;
   border-radius: 25px;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
  /* --- COLORS --- */
