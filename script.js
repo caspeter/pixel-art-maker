@@ -86,6 +86,7 @@ submitColor.addEventListener('click', function () {
   var colorValue = ownColor.value
   console.log(colorValue);
   idColor = colorValue;
+  currentColor.style.backgroundColor = colorValue;
 })
 
 // ERASER
